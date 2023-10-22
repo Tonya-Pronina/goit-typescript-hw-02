@@ -3,9 +3,13 @@
   Використовуйте generics, щоб цей інтерфейс міг працювати з будь-якими типами ключів та значень.
 */
 
-interface KeyValuePair {
-  key;
-  value;
+interface KeyValuePair<T, U> {
+  key: T;
+  value: U;
 }
+ let lala: KeyValuePair<string, number> ={
+  key: 'la',
+  value: 3.
+ }
 
 export {};
